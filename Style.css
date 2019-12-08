@@ -1,0 +1,120 @@
+@font-face {
+ font-family: "font1";
+ src: url("fonts/Comfortaa-Light.ttf")
+ }
+ @font-face {
+ font-family: "font2";
+ src: url("fonts/Adam.otf")
+ }
+ @font-face {
+ font-family: "font3";
+ src: url("fonts/Roboto-Light.ttf")
+ }
+body {
+	background: rgb(192,193,193);
+	background: radial-gradient(circle, rgba(192,193,193,1) 9%, rgba(255,234,224,1) 42%, rgba(235,243,250,1) 68%);
+	font-family: "font3";
+	font-size : 16px;
+	}
+
+h1 { 
+	font-family: "font1", serif;
+	text-shadow: 0em 0.1em 0.1em rgba(0,0,0,0.1);
+	font-weight: 900;
+	Color: #C06C84;
+	size: 32px;
+	text-align: center;
+	}
+h2,h3 {
+	font-family: "font2", serif;
+	letter-spacing: 3px;
+	color: #99d8d0;
+	font-weight: bolder;
+	text-align: center;
+}
+
+a:hover {
+	transition: .5s ease;
+	opacity: 0.5;
+}
+
+.container {
+	width: 900px;
+	margin: 40px auto ;
+}
+
+
+.card-white{
+	background: white;                         
+	margin: 30px;  
+	padding: 20px;                           
+	border-radius: 5px;                       
+	box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.text-center {
+		text-align: center;
+}
+
+.profile-pic {
+	width: 200px;
+	height:200px;
+	border-radius: 50%;
+  	transition: .5s ease;
+}
+
+.text {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+}
+
+.Profile:hover .profile-pic {
+  opacity: 0.3;
+}
+
+.Profile:hover .text {
+  opacity: 1;
+}
+
+.text {
+  color: grey;
+  padding: 16px 32px;
+}
+
+#social-center {
+	text-align : center;
+}
+
+#link-inline li {
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 30px;
+}
+
+#box-sticked {
+	position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width:100px;
+  height:200px;
+}
+
+
+
+@media (max-width: 960px) {
+	.container { width: 700px; }
+	#box-sticked { opacity: 0.5;}
+}
+@media (max-width: 720px) {
+	.container { width: 500px; }
+	#box-sticked { opacity: 0;}
+}
+@media (max-width: 540px) {
+	.container { width: 450px; }
+	#box-sticked { opacity: 0;}
+}
